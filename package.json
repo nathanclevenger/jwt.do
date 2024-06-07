@@ -1,16 +1,21 @@
 {
   "module": "worker.js",
   "scripts": {
+    "deploy": "wrangler deploy",
     "dev": "wrangler dev",
-    "deploy": "wrangler publish",
+    "start": "wrangler dev",
+    "cf-typegen": "wrangler types",
     "format": "prettier --write ."
   },
   "dependencies": {
-    "jose": "^4.10.0",
-    "nanoid": "^4.0.0",
-    "qs": "^6.11.0"
+    "jose": "^5.4.0",
+    "nanoid": "^5.0.7",
+    "qs": "^6.12.1"
   },
   "devDependencies": {
-    "wrangler": "^2.1.11"
+    "@cloudflare/workers-types": "^4.20240603.0",
+    "@types/qs": "^6.9.15",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.59.0"
   }
 }
